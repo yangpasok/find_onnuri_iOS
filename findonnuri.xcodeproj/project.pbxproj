@@ -12,9 +12,13 @@
 		CE285C7C243DD2CB00FF1CA9 /* findonnuri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE285C7A243DD2CB00FF1CA9 /* findonnuri.xcdatamodeld */; };
 		CE285C7E243DD2CD00FF1CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE285C7D243DD2CD00FF1CA9 /* Assets.xcassets */; };
 		CE285C81243DD2CD00FF1CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE285C7F243DD2CD00FF1CA9 /* LaunchScreen.storyboard */; };
+		D3A338DCB65632CD8A9AD807 /* Pods_findonnuri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5150B4C15EDCF8F95B7191 /* Pods_findonnuri.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33638238CB25418A5EFE193F /* Pods-findonnuri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findonnuri.debug.xcconfig"; path = "Target Support Files/Pods-findonnuri/Pods-findonnuri.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5150B4C15EDCF8F95B7191 /* Pods_findonnuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_findonnuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CB336A235CD5251A1AF59E /* Pods-findonnuri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findonnuri.release.xcconfig"; path = "Target Support Files/Pods-findonnuri/Pods-findonnuri.release.xcconfig"; sourceTree = "<group>"; };
 		CE285C6E243DD2CB00FF1CA9 /* findonnuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findonnuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE285C71243DD2CB00FF1CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE285C75243DD2CB00FF1CA9 /* TestRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRootViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A338DCB65632CD8A9AD807 /* Pods_findonnuri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640610AF1DD69DED5ADBAFA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E5150B4C15EDCF8F95B7191 /* Pods_findonnuri.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE285C65243DD2CB00FF1CA9 = {
 			isa = PBXGroup;
 			children = (
 				CE285C70243DD2CB00FF1CA9 /* findonnuri */,
 				CE285C6F243DD2CB00FF1CA9 /* Products */,
+				F42DFFAA0743A5EDC5FA466F /* Pods */,
+				640610AF1DD69DED5ADBAFA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = findonnuri;
 			sourceTree = "<group>";
 		};
+		F42DFFAA0743A5EDC5FA466F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33638238CB25418A5EFE193F /* Pods-findonnuri.debug.xcconfig */,
+				A2CB336A235CD5251A1AF59E /* Pods-findonnuri.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE285C85243DD2CD00FF1CA9 /* Build configuration list for PBXNativeTarget "findonnuri" */;
 			buildPhases = (
+				5D9749E51A74397AE483BE20 /* [CP] Check Pods Manifest.lock */,
 				CE285C6A243DD2CB00FF1CA9 /* Sources */,
 				CE285C6B243DD2CB00FF1CA9 /* Frameworks */,
 				CE285C6C243DD2CB00FF1CA9 /* Resources */,
+				A125F649D914C92C1CEB3A75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D9749E51A74397AE483BE20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-findonnuri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A125F649D914C92C1CEB3A75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-findonnuri/Pods-findonnuri-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-findonnuri/Pods-findonnuri-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-findonnuri/Pods-findonnuri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE285C6A243DD2CB00FF1CA9 /* Sources */ = {
@@ -270,6 +339,7 @@
 		};
 		CE285C86243DD2CD00FF1CA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33638238CB25418A5EFE193F /* Pods-findonnuri.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +360,7 @@
 		};
 		CE285C87243DD2CD00FF1CA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2CB336A235CD5251A1AF59E /* Pods-findonnuri.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
