@@ -6,5 +6,6 @@ target 'findonnuri' do
   use_frameworks!
 
   # Pods for findonnuri
+  pod 'Google-Mobile-Ads-SDK'
   pod 'NMapsMap'
 end
