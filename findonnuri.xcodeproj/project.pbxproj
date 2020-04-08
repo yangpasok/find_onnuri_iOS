@@ -12,6 +12,13 @@
 		CE285C7C243DD2CB00FF1CA9 /* findonnuri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE285C7A243DD2CB00FF1CA9 /* findonnuri.xcdatamodeld */; };
 		CE285C7E243DD2CD00FF1CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE285C7D243DD2CD00FF1CA9 /* Assets.xcassets */; };
 		CE285C81243DD2CD00FF1CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE285C7F243DD2CD00FF1CA9 /* LaunchScreen.storyboard */; };
+		CE69BE22243DE2DC00A5C838 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69BE21243DE2DC00A5C838 /* ADViewController.swift */; };
+		CE69BE29243DE30F00A5C838 /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69BE23243DE30F00A5C838 /* SDWebImageMapKit.framework */; };
+		CE69BE2A243DE30F00A5C838 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69BE24243DE30F00A5C838 /* ToastSwiftFramework.framework */; };
+		CE69BE2B243DE30F00A5C838 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69BE25243DE30F00A5C838 /* Alamofire.framework */; };
+		CE69BE2C243DE30F00A5C838 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69BE26243DE30F00A5C838 /* SDWebImage.framework */; };
+		CE69BE2D243DE30F00A5C838 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69BE27243DE30F00A5C838 /* Lottie.framework */; };
+		CE69BE2E243DE30F00A5C838 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69BE28243DE30F00A5C838 /* SnapKit.framework */; };
 		D3A338DCB65632CD8A9AD807 /* Pods_findonnuri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5150B4C15EDCF8F95B7191 /* Pods_findonnuri.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +33,13 @@
 		CE285C7D243DD2CD00FF1CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE285C80243DD2CD00FF1CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE285C82243DD2CD00FF1CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE69BE21243DE2DC00A5C838 /* ADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		CE69BE23243DE30F00A5C838 /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = "<group>"; };
+		CE69BE24243DE30F00A5C838 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
+		CE69BE25243DE30F00A5C838 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CE69BE26243DE30F00A5C838 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		CE69BE27243DE30F00A5C838 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		CE69BE28243DE30F00A5C838 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE69BE29243DE30F00A5C838 /* SDWebImageMapKit.framework in Frameworks */,
+				CE69BE2A243DE30F00A5C838 /* ToastSwiftFramework.framework in Frameworks */,
+				CE69BE2B243DE30F00A5C838 /* Alamofire.framework in Frameworks */,
+				CE69BE2C243DE30F00A5C838 /* SDWebImage.framework in Frameworks */,
+				CE69BE2D243DE30F00A5C838 /* Lottie.framework in Frameworks */,
+				CE69BE2E243DE30F00A5C838 /* SnapKit.framework in Frameworks */,
 				D3A338DCB65632CD8A9AD807 /* Pods_findonnuri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +63,12 @@
 		640610AF1DD69DED5ADBAFA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE69BE25243DE30F00A5C838 /* Alamofire.framework */,
+				CE69BE27243DE30F00A5C838 /* Lottie.framework */,
+				CE69BE26243DE30F00A5C838 /* SDWebImage.framework */,
+				CE69BE23243DE30F00A5C838 /* SDWebImageMapKit.framework */,
+				CE69BE28243DE30F00A5C838 /* SnapKit.framework */,
+				CE69BE24243DE30F00A5C838 /* ToastSwiftFramework.framework */,
 				9E5150B4C15EDCF8F95B7191 /* Pods_findonnuri.framework */,
 			);
 			name = Frameworks;
@@ -71,6 +97,7 @@
 			children = (
 				CE285C71243DD2CB00FF1CA9 /* AppDelegate.swift */,
 				CE285C75243DD2CB00FF1CA9 /* TestRootViewController.swift */,
+				CE69BE21243DE2DC00A5C838 /* ADViewController.swift */,
 				CE285C7D243DD2CD00FF1CA9 /* Assets.xcassets */,
 				CE285C7F243DD2CD00FF1CA9 /* LaunchScreen.storyboard */,
 				CE285C82243DD2CD00FF1CA9 /* Info.plist */,
@@ -227,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE285C76243DD2CB00FF1CA9 /* TestRootViewController.swift in Sources */,
+				CE69BE22243DE2DC00A5C838 /* ADViewController.swift in Sources */,
 				CE285C72243DD2CB00FF1CA9 /* AppDelegate.swift in Sources */,
 				CE285C7C243DD2CB00FF1CA9 /* findonnuri.xcdatamodeld in Sources */,
 			);
@@ -368,6 +396,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = NB97F4PNAZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = findonnuri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +421,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = NB97F4PNAZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = findonnuri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
