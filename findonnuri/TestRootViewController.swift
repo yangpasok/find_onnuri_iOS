@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import NMapsMap
 import SnapKit
 
 class TestRootViewController: UIViewController {
+
+    let mapView = NMFMapView()
 
     let adviewController = ADViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.yellow
+        
+        view.addSubview(mapView)
         
         addChild(adviewController)
-        self.view.addSubview(adviewController.view)
+        view.addSubview(adviewController.view)
         adviewController.didMove(toParent: self)
+        
+        mapView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
         
         adviewController.view.snp.makeConstraints {
             $0.bottom.equalToSuperview().offset(-10)
