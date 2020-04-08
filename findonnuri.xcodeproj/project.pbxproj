@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -85,7 +85,6 @@
 				33638238CB25418A5EFE193F /* Pods-findonnuri.debug.xcconfig */,
 				A2CB336A235CD5251A1AF59E /* Pods-findonnuri.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -101,6 +100,7 @@
 				CE285C6B243DD2CB00FF1CA9 /* Frameworks */,
 				CE285C6C243DD2CB00FF1CA9 /* Resources */,
 				A125F649D914C92C1CEB3A75 /* [CP] Embed Pods Frameworks */,
+				CE69BE20243DDFB900A5C838 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,6 +195,29 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-findonnuri/Pods-findonnuri-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CE69BE20243DDFB900A5C838 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImageMapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

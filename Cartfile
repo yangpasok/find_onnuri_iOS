@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" ~> 5.1
+github "SnapKit/SnapKit" ~> 5.0.0
+github "airbnb/lottie-ios" "master"
+github "SDWebImage/SDWebImage"
+github "scalessec/Toast-Swift" ~> 5.0.1
